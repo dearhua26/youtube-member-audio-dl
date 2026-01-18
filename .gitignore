@@ -19,6 +19,7 @@ Downloads_Batch/
 *.webp
 *.jpg
 *.png
+!screenshot.png
 
 # Python
 __pycache__/
