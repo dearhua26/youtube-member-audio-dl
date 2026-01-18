@@ -6,6 +6,10 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+## 📸 软件截图
+
+![GUI Screenshot](screenshot.png)
+
 ## 🎯 这是什么？
 
 一个专为下载 **YouTube 会员专属内容** 设计的工具：
@@ -16,6 +20,11 @@
 
 ## ✨ 功能特性
 
+### 下载模式
+- 🎯 **单视频下载**：粘贴链接即可下载
+- 📋 **批量下载**：支持从文本文件批量读取链接列表
+
+### 核心功能
 - 🔐 **Cookie 认证**：支持会员/付费内容下载
 - 🎵 **纯音频提取**：优先 M4A 格式，跳过视频下载
 - 🖼️ **封面嵌入**：自动下载并嵌入专辑封面
