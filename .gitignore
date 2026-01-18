@@ -1,0 +1,35 @@
+# Dependencies (auto-downloaded)
+yt-dlp.exe
+ffmpeg.exe
+ffprobe.exe
+node_bin/
+
+# User data
+cookies.txt
+config.json
+downloaded.txt
+failed_ids.txt
+ERROR_GUIDE.txt
+
+# Downloads
+Downloads/
+Downloads_Single/
+Downloads_Batch/
+*.m4a
+*.webp
+*.jpg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
