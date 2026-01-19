@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Audio Downloader Pro - 极简高效的音频下载神器</title>
+    <meta name="description" content="免费下载 YouTube 音频，支持会员内容，一键提取高质量 M4A 格式。">
+    <style>
+        :root {
+            --primary: #ff0000;
+            --primary-dark: #cc0000;
+            --bg-dark: #0f0f0f;
+            --bg-card: #1a1a1a;
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 6px 30px rgba(255, 0, 0, 0.5);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-card);
+            color: white;
+            border: 2px solid #333;
+        }
+        
+        /* Pain Points Section */
+        .pain-points {
+            padding: 80px 20px;
+            background: var(--bg-dark);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .pain-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .pain-card h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .pain-card p {
+            color: var(--text-muted);
+        }
+        
+        /* Solutions Section */
+        .solutions {
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #0f0f0f 0%, #1a1a2e 100%);
+        }
+        
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .solution-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 4px solid #1dd1a1;
+            text-align: center;
+        }
+        
+        .solution-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .solution-card h3 {
+            color: #1dd1a1;
+            margin-bottom: 15px;
+        }
+        
+        .solution-card p {
+            color: var(--text-muted);
+        }
+        
+        /* Star CTA */
+        .star-cta {
+            text-align: center;
+            padding: 80px 20px;
+            background: var(--bg-card);
+        }
+        
+        .star-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .star-cta p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .github-star-btn {
+            background: linear-gradient(135deg, #feca57, #ff9f43);
+            color: #000;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+        }
+        
+        .github-star-btn:hover {
+            box-shadow: 0 6px 30px rgba(254, 202, 87, 0.5);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--text);
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>🎵 YouTube Audio Downloader Pro</h1>
+            <p>极简、高效、免费的 YouTube 音频批量下载工具。支持普通视频与会员内容，一键提取高质量 M4A 音频。</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/dearhua26/youtube-member-audio-dl/releases" class="btn btn-primary">
+                    ⬇️ 立即下载
+                </a>
+                <a href="https://github.com/dearhua26/youtube-member-audio-dl" class="btn btn-secondary">
+                    📖 查看源码
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="pain-points">
+        <div class="container">
+            <h2 class="section-title">😩 你是否遇到过这些问题？</h2>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <h3>❌ 下载工具太复杂</h3>
+                    <p>命令行操作、各种参数配置，普通用户根本无法上手，只想要一个"粘贴即下载"的体验。</p>
+                </div>
+                <div class="pain-card">
+                    <h3>❌ 会员视频无法下载</h3>
+                    <p>付费订阅的频道、年龄限制的内容，普通下载器根本无能为力，付了钱却无法离线收藏。</p>
+                </div>
+                <div class="pain-card">
+                    <h3>❌ 只想要音频，不要视频</h3>
+                    <p>下载几个 GB 的视频文件，只为听个音频？太浪费时间和磁盘空间了。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section-title">✨ 我们的解决方案</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="icon">🖱️</div>
+                    <h3>一键下载</h3>
+                    <p>图形界面操作，粘贴链接即可下载，零学习成本。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">🔐</div>
+                    <h3>支持会员内容</h3>
+                    <p>配置 Cookie 后，轻松下载会员专属、年龄受限视频。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">🎵</div>
+                    <h3>纯音频提取</h3>
+                    <p>直接获取 M4A 格式音频，体积小、音质高、速度快。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">📋</div>
+                    <h3>批量下载</h3>
+                    <p>支持从文本文件批量读取链接，一次搞定数百个视频。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">🔄</div>
+                    <h3>断点续传</h3>
+                    <p>已下载的文件自动跳过，中断后继续无需从头再来。</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">💰</div>
+                    <h3>完全免费</h3>
+                    <p>所有功能免费使用，开源透明，无广告无付费墙。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Star CTA -->
+    <section class="star-cta">
+        <div class="container">
+            <h2>⭐ 觉得有用？给我们一个 Star！</h2>
+            <p>你的支持是我们持续更新的动力。如果这个工具帮到了你，请在 GitHub 上点个 Star，让更多人发现它！</p>
+            <a href="https://github.com/dearhua26/youtube-member-audio-dl" class="btn github-star-btn">
+                ⭐ Star on GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>MIT License · Made with ❤️ by <a href="https://github.com/dearhua26">dearhua26</a></p>
+    </footer>
+</body>
+</html>
