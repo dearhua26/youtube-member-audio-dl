@@ -46,12 +46,24 @@
 
 ## 📖 使用指南
 
-### 首次使用
+本软件所有功能完全**免费**使用。根据视频类型，你可以选择以下两种下载方式：
 
-1. 在浏览器安装 [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) 插件
-2. 登录 YouTube 会员账号，导出 cookies
-3. 在软件设置页粘贴 cookies 内容
-4. 输入视频链接开始下载
+### 1. 常规下载 (普通视频)
+无需任何配置，直接快速下载：
+1. 复制 YouTube 视频链接。
+2. 在软件【下载】页粘贴链接，点击【下载单个】。
+3. 等待进度条完成，音频将保存在 `Downloads` 文件夹。
+
+### 2. 进阶下载 (会员/受限内容)
+针对会员专属、年龄限制或特定地区视频，请按以下步骤操作（同样免费）：
+1. 在浏览器安装插件：[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)。
+2. 登录你的 YouTube 账号（确保你有权访问该视频）。
+3. 使用插件导出 Cookie 内容。
+4. 打开软件【设置】页，将 Cookie 内容粘贴到文本框并点击【保存】。
+5. 回到【下载】页粘贴链接即可下载。
+
+> 💡 **提示**：Cookie 仅保存在你本地的 `cookies.txt` 文件中，软件不会上传你的个人信息。
+
 
 ## 🎤 配合字幕生成
 
