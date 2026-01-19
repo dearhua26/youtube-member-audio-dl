@@ -10,6 +10,23 @@
 
 ![GUI Screenshot](screenshot.png)
 
+## 🚀 下载安装
+
+### 普通用户（推荐）
+1. 前往 [Releases](https://github.com/dearhua26/youtube-member-audio-dl/releases) 页面
+2. 下载 `YouTubeAudioDownloader-v1.0.0-Windows.zip` (~186MB)
+3. 解压到任意目录
+4. 双击 `YouTubeAudioDownloader.exe` 运行
+
+> 💡 ZIP 包已包含所有依赖（yt-dlp、ffmpeg、Node.js），无需额外安装！
+
+### 开发者
+```bash
+git clone https://github.com/dearhua26/youtube-member-audio-dl.git
+cd youtube-member-audio-dl
+python scripts/downloader_ui.py
+```
+
 ## 🎯 这是什么？
 
 一个专为下载 **YouTube 会员专属内容** 设计的工具：
@@ -32,29 +49,7 @@
 - 🛡️ **智能诊断**：遇到错误自动生成修复指南
 - 🖥️ **图形界面**：简洁易用的 GUI 操作
 
-## 📦 项目结构
-
-```
-youtube-member-audio-dl/
-├── simple_download.bat     # 启动脚本
-├── scripts/
-│   ├── smart_download.py   # 核心下载逻辑
-│   ├── downloader_ui.py    # 图形界面
-│   └── extract_ids.py      # 链接提取工具
-└── ...
-```
-
-## 🚀 快速开始
-
-### 环境要求
-- Windows 10/11
-- Python 3.8+
-- Node.js (LTS)
-
-### 使用方法
-
-1. **图形界面**：`python scripts/downloader_ui.py`
-2. **命令行**：双击 `simple_download.bat`
+## 📖 使用指南
 
 ### 首次使用
 
@@ -70,14 +65,7 @@ youtube-member-audio-dl/
 ```bash
 # 使用 OpenAI Whisper
 whisper your_audio.m4a --language Chinese --model medium
-
-# 或使用 faster-whisper
-faster-whisper your_audio.m4a --language zh
 ```
-
-## 📖 开发历程
-
-详见 [DEVELOPMENT_JOURNEY.md](DEVELOPMENT_JOURNEY.md)
 
 ## 📄 许可证
 
