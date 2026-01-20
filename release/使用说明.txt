@@ -1,0 +1,24 @@
+YouTube 会员音频下载器 - 使用说明
+=====================================
+
+【使用方法】
+1. 双击运行 "YouTubeAudioDownloader.exe"
+2. 在"设置"页面粘贴你的 YouTube Cookies
+3. 输入链接或选择批量文件开始下载
+
+【获取 Cookies】
+1. 安装浏览器插件: "Get cookies.txt LOCALLY"
+2. 登录 YouTube 会员账号
+3. 导出 cookies 并粘贴到软件设置页
+
+【文件说明】
+- YouTubeAudioDownloader.exe - 主程序
+- yt-dlp.exe - 下载引擎
+- ffmpeg.exe / ffprobe.exe - 音频处理
+- node.exe - YouTube 验证支持
+
+【注意事项】
+- 所有文件必须放在同一目录
+- 下载的音频保存在 Downloads 文件夹
+
+项目主页: https://github.com/dearhua26/youtube-member-audio-dl

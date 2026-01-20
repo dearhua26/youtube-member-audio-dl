@@ -1,0 +1,20 @@
+YouTube 会员音频下载器 (特别版) - 使用说明
+=========================================
+
+【特别说明】
+为了减小软件体积，本版本为"灵巧版" (Lite)。
+首次运行时，软件会自动检测并下载必要的组件（如 Node.js, FFmpeg 等）。
+请务必保持网络畅通，耐心等待自动配置完成 (约需下载 50MB)。
+
+【使用方法】
+1. 双击运行 "YouTubeAudioDownloader.exe"
+2. 如果是第一次运行，会弹出"正在配置环境"窗口，请等待进度条完成
+3. 配置完成后，主界面会自动打开
+4. 在"设置"页面粘贴你的 YouTube Cookies
+5. 输入链接开始下载
+
+【文件说明】
+- YouTubeAudioDownloader.exe - 主程序
+- 自动下载的组件会保存在同目录下的 ffmpeg.exe, node.exe 等
+
+如有问题请访问: https://github.com/dearhua26/youtube-member-audio-dl
